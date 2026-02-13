@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>プロダクト | 地方再興</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="theme.js"></script>
+</head>
+<body>
+  <button class="mobile-toggle">☰</button>
+  <div class="layout">
+    <aside id="sidebar-target" class="sidebar"></aside>
+
+    <main class="main">
+      <div class="page-header">
+        <h2>📦 プロダクトポートフォリオ</h2>
+        <p class="subtitle">AIの発達で「あったらいいな」が「作れる」に変わった</p>
+        <p class="text-muted u-mt-12" style="font-size: 0.9em; line-height: 1.6;">
+          かつては専門チームが必要だった言語化・広報・調査・事務処理を、AIエージェントが担えるようになりました。<br>
+          このページでは、挑戦者の各段階に応じた<strong>6つのアプリ＋Agent Pack</strong>と、それを支える<strong>AIエージェント（+3人分の仕事量）</strong>の設計を紹介します。
+        </p>
+      </div>
+
+      <!-- Architecture -->
+      <section class="section">
+        <h3 class="section-title"><span class="icon">🏗️</span> アーキテクチャ</h3>
+        <div class="card u-text-center u-p-40 u-font-mono u-fs-13 u-lh-22">
+          <div class="gold-text">── 入口 ──────── 中間 ──────── 出口 ──</div>
+          <div>モヤモヤキャッチャー │ 次の一手アクセラ │ 社長AI</div>
+          <div style="color:var(--text-muted);">（Lv0-2）　　　　 │ （Lv3-4）　　　　│ （Lv5-7）</div>
+          <div class="u-gold u-my-12">━━━━━━ 共通コア（Data / Agent / Log）━━━━━━</div>
+          <div>探究学習版　　　│ 支援者Copilot　│ マッチングHub</div>
+          <div style="color:var(--text-muted);">（探究学習）　　　 │ （自治体/会議所）│ （企業/財団）</div>
+          <div class="u-cyan u-mt-12">═══ Agent Pack（編集長/広報/調査/事務）横串 ═══</div>
+        </div>
+      </section>
+
+      <!-- Product Cards -->
+      <section class="section">
+        <h3 class="section-title"><span class="icon">🎯</span> プロダクト一覧</h3>
+        <div class="grid-3">
+          <div class="card animate-in">
+            <div class="card-header">
+              <div class="card-icon gold">💬</div>
+              <div class="card-title">モヤモヤキャッチャー <span class="badge-status done">プロト完成</span></div>
+            </div>
+            <div class="card-description">
+              <span class="badge gold">Lv0-2</span><br><br>
+              2分で「次の一手」。90日プラン・文章パック・資金レンジを即座に出力
+            </div>
+          </div>
+          <div class="card animate-in">
+            <div class="card-header">
+              <div class="card-icon cyan">🚀</div>
+              <div class="card-title">次の一手アクセラ <span class="badge-status planned">構想</span></div>
+            </div>
+            <div class="card-description">
+              <span class="badge cyan">Lv3-4</span><br><br>
+              サービス設計 / 集客導線 / 体制づくりの伴走
+            </div>
+          </div>
+          <div class="card animate-in">
+            <div class="card-header">
+              <div class="card-icon violet">🧠</div>
+              <div class="card-title">社長AI（President AI） <span class="badge-status done">プロト完成</span></div>
+            </div>
+            <div class="card-description">
+              <span class="badge violet">Lv5-7</span><br><br>
+              意思決定の高速化・チーム運営のOS化
+            </div>
+          </div>
+          <div class="card animate-in">
+            <div class="card-header">
+              <div class="card-icon emerald">🏛️</div>
+              <div class="card-title">支援者Copilot <span class="badge-status ready">ミニマム済</span></div>
+            </div>
+            <div class="card-description">
+              <span class="badge emerald">自治体・会議所</span><br><br>
+              相談の一次整理 → 制度候補 → 引き継ぎ記録
+            </div>
+          </div>
+          <div class="card animate-in">
+            <div class="card-header">
+              <div class="card-icon rose">🤝</div>
+              <div class="card-title">マッチングHub <span class="badge-status planned">構想</span></div>
+            </div>
+            <div class="card-description">
+              <span class="badge rose">企業・財団</span><br><br>
+              Needs Mapで「何にいくら出すと効くか」を可視化
+            </div>
+          </div>
+          <div class="card animate-in">
+            <div class="card-header">
+              <div class="card-icon gold">📚</div>
+              <div class="card-title">Agent Pack</div>
+            </div>
+            <div class="card-description">
+              <span class="badge gold">横串</span><br><br>
+              編集長 / 広報 / 調査の型をテキストで配布
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- AI Agents -->
+      <section class="section">
+        <h3 class="section-title"><span class="icon">🤖</span> AIエージェント（+3人）設計</h3>
+        <div class="grid-3">
+          <div class="card animate-in">
+            <div class="card-header">
+              <div class="card-icon gold">✏️</div>
+              <div class="card-title">#1 編集長 <span class="badge-status done">実装済</span></div>
+            </div>
+            <div class="card-description">
+              言語化・構造化<br>
+              モヤモヤ → 課題 → 仮説 → 90日計画<br><br>
+              <span class="text-muted">埋める詰まり：「頭の中が文字にならない」</span>
+            </div>
+          </div>
+          <div class="card animate-in">
+            <div class="card-header">
+              <div class="card-icon cyan">📣</div>
+              <div class="card-title">#2 広報・営業 <span class="badge-status done">実装済</span></div>
+            </div>
+            <div class="card-description">
+              依頼文・協賛提案・SNS投稿の量産<br><br>
+              <span class="text-muted">埋める詰まり：「文章が書けない→送れない」</span>
+            </div>
+          </div>
+          <div class="card animate-in">
+            <div class="card-header">
+              <div class="card-icon emerald">🔍</div>
+              <div class="card-title">#3 調査・事務 <span class="badge-status needs-collab">協力者が必要</span></div>
+            </div>
+            <div class="card-description">
+              補助金候補・協賛当たり・要件整理<br><br>
+              <span class="text-muted">埋める詰まり：「制度につなげない」</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Impact -->
+        <div class="table-wrap mt-16">
+          <table>
+            <thead><tr><th>指標</th><th>AIなし</th><th>AIあり</th><th>倍率</th></tr></thead>
+            <tbody>
+              <tr><td>外部への接点数</td><td>月2件</td><td class="text-gold fw-700">月8件</td><td>×4</td></tr>
+              <tr><td>打合せに進む割合</td><td>5%</td><td class="text-cyan fw-700">10%</td><td>×2</td></tr>
+              <tr><td>月あたり新規対話</td><td>0〜1件</td><td class="text-emerald fw-700">1〜2件が安定</td><td>—</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <!-- Do Not Build -->
+      <section class="section">
+        <h3 class="section-title"><span class="icon">🚫</span> Do Not Build（Phase 1で絶対に作らないもの）</h3>
+        <div class="quote mb-20">「システムは、人力で悲鳴を上げてから作る」</div>
+        <div class="dnb-item animate-in">
+          <div class="dnb-icon">🚫</div>
+          <div>
+            <div class="dnb-name">支援者Copilot画面</div>
+            <div class="dnb-reason">理由：行政のITアレルギー</div>
+            <div class="dnb-hack">🔧 人力ハック：裏でAI → 紙/PDFカルテで窓口に持ち込み（トロイの木馬戦略）</div>
+          </div>
+        </div>
+        <div class="dnb-item animate-in">
+          <div class="dnb-icon">🚫</div>
+          <div>
+            <div class="dnb-name">マッチングHub</div>
+            <div class="dnb-reason">理由：商品がない空箱のプラットフォームには誰も来ない</div>
+            <div class="dnb-hack">🔧 人力ハック：事務局が足と人脈で直接営業</div>
+          </div>
+        </div>
+        <div class="dnb-item animate-in">
+          <div class="dnb-icon">🚫</div>
+          <div>
+            <div class="dnb-name">次の一手アクセラ / 社長AI</div>
+            <div class="dnb-reason">理由：事業化の壁は個別性が高く、AI一律対応ではボロが出る</div>
+            <div class="dnb-hack">🔧 人力ハック：Agent Packをテキストで直接配布。チャレンジャーを「歩くAgent」に</div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 3 MVPs -->
+      <section class="section">
+        <h3 class="section-title"><span class="icon">🎯</span> Day 1で全集中する3つのMVP</h3>
+        <div class="mvp-item animate-in">
+          <div class="mvp-num">①</div>
+          <div>
+            <div class="mvp-name">Tech MVP：モヤモヤキャッチャー単一機能</div>
+            <div class="mvp-desc">相談の摩擦を下げることだけにシステム資源を投下。＋支援者向け相談メモ出力</div>
+          </div>
+        </div>
+        <div class="mvp-item animate-in">
+          <div class="mvp-num">②</div>
+          <div>
+            <div class="mvp-name">Data MVP：地域PJレコードの密かな蓄積</div>
+            <div class="mvp-desc">Airtable/スプレッドシートでOK。需要データの構造化だけはDay 1から妥協しない</div>
+          </div>
+        </div>
+        <div class="mvp-item animate-in">
+          <div class="mvp-num">③</div>
+          <div>
+            <div class="mvp-name">Ops MVP：実装者を「実戦チーム（実働ユニット）」として稼働</div>
+            <div class="mvp-desc">プロンプト履歴＋経営者の反応ログ回収 → Phase 2の最高の要件定義に</div>
+          </div>
+        </div>
+        <div class="quote mt-16">
+          <strong>システム化トリガー</strong>：手作業でのマッチングやPDF作成が限界に達し、事務局が悲鳴を上げた瞬間
+        </div>
+      </section>
+    </main>
+  </div>
+</body>
+</html>

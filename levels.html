@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>挑戦者レベル | 地方再興</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="theme.js"></script>
+</head>
+<body>
+  <button class="mobile-toggle">☰</button>
+  <div class="layout">
+    <aside id="sidebar-target" class="sidebar"></aside>
+
+    <main class="main">
+      <div class="page-header">
+        <h2>🪜 挑戦者レベル設計</h2>
+        <p class="subtitle">挑戦者の「今どこにいるか」を見える化し、最適な支援に繋ぐ仕組み</p>
+        <p class="text-muted u-mt-12" style="font-size: 0.9em; line-height: 1.6;">
+          「何をしたいか分からない（Lv0）」から「他の挑戦者を生み出す側（Lv7）」まで、<strong>気持ちではなく観測できる状態</strong>で8段階に分類します。<br>
+          さらに最小7つの質問で自動的にレベルを判定（ルーティング）し、その人に合った支援・成果物・メンターをマッチングします。
+        </p>
+      </div>
+
+      <!-- Level Ladder -->
+      <section class="section">
+        <h3 class="section-title"><span class="icon">📐</span> 8段階のレベルラダー</h3>
+        <div class="level-ladder">
+          <div class="level-item animate-in">
+            <div class="level-num text-muted">Lv0</div>
+            <div>
+              <div class="level-name">フリーズ</div>
+              <div class="level-desc">動けない状態。入口の言葉を優しく</div>
+            </div>
+            <div class="level-output">※入れない</div>
+          </div>
+          <div class="level-item animate-in u-border-gold">
+            <div class="level-num text-gold">Lv1</div>
+            <div>
+              <div class="level-name">くすぶり</div>
+              <div class="level-desc">何かしたいがモヤモヤ</div>
+            </div>
+            <div class="level-output">3行自己紹介、最初のDMテンプレ</div>
+          </div>
+          <div class="level-item animate-in u-border-gold">
+            <div class="level-num text-gold">Lv2</div>
+            <div>
+              <div class="level-name">一歩目 ★主戦場</div>
+              <div class="level-desc">最初のアクションへ踏み出す</div>
+            </div>
+            <div class="level-output">90日プラン、資金レンジ、巻き込み文面</div>
+          </div>
+          <div class="level-item animate-in u-border-cyan">
+            <div class="level-num text-cyan">Lv3</div>
+            <div>
+              <div class="level-name">運営見習い</div>
+              <div class="level-desc">活動を回し始めている</div>
+            </div>
+            <div class="level-output">役割分担案、ボランティア募集文</div>
+          </div>
+          <div class="level-item animate-in u-border-cyan">
+            <div class="level-num text-cyan">Lv4</div>
+            <div>
+              <div class="level-name">実験者</div>
+              <div class="level-desc">外部との接点を持ち始めている</div>
+            </div>
+            <div class="level-output">価値提案、協賛メニュー草案</div>
+          </div>
+          <div class="level-item animate-in u-border-emerald">
+            <div class="level-num text-emerald">Lv5</div>
+            <div>
+              <div class="level-name">事業化直前</div>
+              <div class="level-desc">売上/協賛の再現性が見え始め</div>
+            </div>
+            <div class="level-output">サービス設計の型、LP/SNS構成</div>
+          </div>
+          <div class="level-item animate-in u-border-emerald">
+            <div class="level-num text-emerald">Lv6</div>
+            <div>
+              <div class="level-name">自走</div>
+              <div class="level-desc">自分が抜けても回る</div>
+            </div>
+            <div class="level-output">KPI設計、採用要件、外注仕様書</div>
+          </div>
+          <div class="level-item animate-in" style="border-left: 3px solid var(--violet);">
+            <div class="level-num u-violet">Lv7</div>
+            <div>
+              <div class="level-name">拡張</div>
+              <div class="level-desc">新しい挑戦者を生む仕組みを持つ</div>
+            </div>
+            <div class="level-output">展開戦略、投資家向けストーリー</div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Routing Questions -->
+      <section class="section">
+        <h3 class="section-title"><span class="icon">❓</span> ルーティング判定（最小7問）</h3>
+        <div class="table-wrap">
+          <table>
+            <thead><tr><th>#</th><th>質問</th><th>選択肢</th></tr></thead>
+            <tbody>
+              <tr><td>1</td><td>直近3ヶ月で活動を実施したか？</td><td>0回 / 1回 / 複数回</td></tr>
+              <tr><td>2</td><td>次回開催日は決まっているか？</td><td>はい / いいえ</td></tr>
+              <tr><td>3</td><td>収入源はあるか？</td><td>なし / 単発 / 月次</td></tr>
+              <tr><td>4</td><td>自分以外の運営担当は？</td><td>0 / 1 / 2以上</td></tr>
+              <tr><td>5</td><td>行政/企業と打合せしているか？</td><td>0 / 月1未満 / 月1以上</td></tr>
+              <tr><td>6</td><td>今の最大の壁は？</td><td>言語化 / 人手 / 収益化 / マーケ / 制度 / その他</td></tr>
+              <tr><td>7</td><td>目指す姿は？</td><td>継続 / 事業化 / 拡張 / 引き継ぎ</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <!-- Role-based Outputs -->
+      <section class="section">
+        <h3 class="section-title"><span class="icon">🎭</span> ロール別の成果物</h3>
+        <div class="grid-3">
+          <div class="card animate-in">
+            <div class="card-header">
+              <div class="card-icon gold">🔥</div>
+              <div class="card-title">当事者</div>
+            </div>
+            <div class="card-description">
+              <strong>欲しい：</strong>90日プラン、資金の複線化、頼み方文章<br>
+              <strong>詰まり：</strong>言語化 / ロードマップ / 巻き込み
+            </div>
+          </div>
+          <div class="card animate-in">
+            <div class="card-header">
+              <div class="card-icon cyan">🏛️</div>
+              <div class="card-title">支援者</div>
+            </div>
+            <div class="card-description">
+              <strong>欲しい：</strong>一次整理、制度候補、引き継ぎ記録<br>
+              <strong>詰まり：</strong>相談が散らかる / 属人化 / 制度棚卸し
+            </div>
+          </div>
+          <div class="card animate-in">
+            <div class="card-header">
+              <div class="card-icon emerald">💼</div>
+              <div class="card-title">資金提供者</div>
+            </div>
+            <div class="card-description">
+              <strong>欲しい：</strong>案件の見える化（何に・いくら・確度）<br>
+              <strong>詰まり：</strong>情報の壁
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+</body>
+</html>

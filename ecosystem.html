@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>エコシステム設計 | 地方再興</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="theme.js"></script>
+</head>
+<body>
+  <button class="mobile-toggle">☰</button>
+  <div class="layout">
+    <aside id="sidebar-target" class="sidebar"></aside>
+
+    <main class="main">
+      <div class="page-header">
+        <h2>🔄 エコシステム設計</h2>
+        <p class="subtitle">「がんばれ」で終わらない、回り続ける仕組みの設計図</p>
+        <p class="text-muted u-mt-12" style="font-size: 0.9em; line-height: 1.6;">
+          地方創生はしばしば「情熱」と「精神論」に頼りがちですが、それだけでは続きません。<br>
+          このページでは、挑戦者が課題を言語化 → 支援者が支援 → 成果が次の挑戦者を生む、という<strong>需要と供給が自然に回り続ける循環（フライホイール）</strong>の仕組みを設計しています。
+        </p>
+      </div>
+
+      <!-- Flywheel -->
+      <section class="section">
+        <h3 class="section-title"><span class="icon">♻️</span> 地方再興フライホイール</h3>
+        <div class="flywheel-flow">
+          <div class="flow-step animate-in">
+            <div class="flow-icon gold">🗣️</div>
+            <div class="flow-content">
+              <div class="flow-label">STEP 1</div>
+              <div class="flow-title">当事者のモヤモヤ</div>
+              <div class="flow-desc">「何かしたい。でも何から？」という声をキャッチ</div>
+            </div>
+          </div>
+          <div class="flow-arrow">▼</div>
+          <div class="flow-step animate-in">
+            <div class="flow-icon cyan">🤖</div>
+            <div class="flow-content">
+              <div class="flow-label">STEP 2</div>
+              <div class="flow-title">AIが対話・言語化</div>
+              <div class="flow-desc">モヤモヤキャッチャーが課題を構造化し、次の一手を提示</div>
+            </div>
+          </div>
+          <div class="flow-arrow">▼</div>
+          <div class="flow-step animate-in">
+            <div class="flow-icon emerald">📄</div>
+            <div class="flow-content">
+              <div class="flow-label">STEP 3</div>
+              <div class="flow-title">成果物が自動生成</div>
+              <div class="flow-desc">90日プラン・巻き込み文面・資金レンジなどを即座に出力</div>
+            </div>
+          </div>
+          <div class="flow-arrow">▼</div>
+          <div class="flow-step animate-in">
+            <div class="flow-icon violet">🏛️</div>
+            <div class="flow-content">
+              <div class="flow-label">STEP 4</div>
+              <div class="flow-title">支援者に繋がる</div>
+              <div class="flow-desc">行政・会議所・企業が「支援しやすい形」でデータを受け取る</div>
+            </div>
+          </div>
+          <div class="flow-arrow">▼</div>
+          <div class="flow-step animate-in">
+            <div class="flow-icon rose">🤝</div>
+            <div class="flow-content">
+              <div class="flow-label">STEP 5</div>
+              <div class="flow-title">支援実行＋資金投下</div>
+              <div class="flow-desc">制度接続・協賛・伴走が動き、挑戦者がレベルアップ</div>
+            </div>
+          </div>
+          <div class="flow-arrow flow-return">🔁 STEP 1へ</div>
+          <div class="flow-step animate-in flow-step-return">
+            <div class="flow-icon gold">🔥</div>
+            <div class="flow-content">
+              <div class="flow-label">STEP 6（還流）</div>
+              <div class="flow-title">修羅場を抜けた人材がメンターに</div>
+              <div class="flow-desc">経験者が次の挑戦者を支える側に回り、循環が加速する</div>
+            </div>
+          </div>
+        </div>
+        <div class="quote">
+          修羅場を抜けた人材がAIインフラ側のメンターに還流する<strong>人材のフライホイール</strong>。<br>
+          「地方創生」が精神論ではなく<strong>「需給の設計」</strong>になる。
+        </div>
+      </section>
+
+      <!-- Each Sector's Strengths and Limitations -->
+      <section class="section">
+        <h3 class="section-title"><span class="icon">⚖️</span> 各セクターのいいところ、惜しいところ</h3>
+        <p class="text-muted u-mb-12" style="font-size: 0.9em;">
+          ※本表はAIによる一般的な分析（一般解）であり、地域によっては既にこれらの課題を克服・実装されているケースもあります。
+        </p>
+        <div class="table-wrap">
+          <table>
+            <thead><tr><th>セクター / 手法</th><th>いいところ</th><th>惜しいところ</th></tr></thead>
+            <tbody>
+              <tr><td>行政主導の若者育成</td><td>公平な機会提供、地域全体を俯瞰したリソース配分</td><td>失敗への不寛容、単年度予算による継続性の分断</td></tr>
+              <tr><td>大学インターンシップ</td><td>若い感性、アカデミックな知見、大学との持続的関係</td><td>期間の制約、学習目的と現場実益のギャップ</td></tr>
+              <tr><td>外部コンサルへの外注</td><td>高度な専門性、第三者視点による客観的分析</td><td>実装と継続の課題、コスト高、ノウハウが蓄積しにくい</td></tr>
+              <tr><td>ピッチ大会</td><td>認知の急拡大、起業家精神の醸成、熱狂の創出</td><td>一過性になりやすい、実行責任とリサーチ密度の不足</td></tr>
+              <tr><td>商工会議所</td><td>地元経営者の強固な信頼関係、歴史ある相談インフラ</td><td>既存事業の維持優先、若手や新ツールとの距離感</td></tr>
+              <tr><td>個人・会社の有志</td><td>圧倒的なスピード感、損得抜きの純粋な情熱</td><td>リソースの属人化、組織的な後押しや予算の不足</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="quote mt-16">
+          本プロジェクトの役割：<strong>既存セクターの「惜しい」をAIで補完し、強みを繋ぎ直す接着剤</strong>
+        </div>
+      </section>
+
+      <!-- Player Motives -->
+      <section class="section">
+        <h3 class="section-title"><span class="icon">🎭</span> プレイヤーの本音の動機</h3>
+        <div class="grid-3">
+          <div class="card animate-in">
+            <div class="card-header">
+              <div class="card-icon gold">👔</div>
+              <div class="card-title">経営者</div>
+            </div>
+            <div class="card-description">
+              <strong>表：</strong>地域貢献・新アイデア<br>
+              <strong>本音：</strong>「俺が育てた」という自己肯定感。右腕候補の発掘
+            </div>
+          </div>
+          <div class="card animate-in">
+            <div class="card-header">
+              <div class="card-icon cyan">🔥</div>
+              <div class="card-title">チャレンジャー/実装者</div>
+            </div>
+            <div class="card-description">
+              <strong>表：</strong>スキルアップ<br>
+              <strong>本音：</strong>「俺はできる」を実績で証明。面白い大人とのつながり
+            </div>
+          </div>
+          <div class="card animate-in">
+            <div class="card-header">
+              <div class="card-icon emerald">🎯</div>
+              <div class="card-title">事務局</div>
+            </div>
+            <div class="card-description">
+              <strong>表：</strong>地域の未来<br>
+              <strong>本音：</strong>再現可能なビジネスモデル（IP）と最初の実績
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Trust Design -->
+      <section class="section">
+        <h3 class="section-title"><span class="icon">🛡️</span> 信頼設計</h3>
+        <div class="grid-2">
+          <div class="card animate-in">
+            <div class="card-title u-mb-12">4原則</div>
+            <div class="card-description">
+              <strong>同意の分離</strong>：成果物生成とログ提供は別同意<br>
+              <strong>粒度の制御</strong>：再同定しづらい粒度から<br>
+              <strong>目的限定</strong>：支援・改善以外に使わない<br>
+              <strong>説明責任</strong>：どんなログが溜まるかを表示
+            </div>
+          </div>
+          <div class="card animate-in">
+            <div class="card-title u-mb-12">今後の課題</div>
+            <div class="card-description">
+              共創前提では<strong>共同ガバナンス設計（Data Commons構造）</strong>が必要。ログの所有権・閲覧権・二次利用ルールを合意文書レベルで定義する。
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Failure Modes -->
+      <section class="section">
+        <h3 class="section-title"><span class="icon">💀</span> Failure Modes（死因の事前定義）</h3>
+        <div class="table-wrap">
+          <table>
+            <thead><tr><th>死因</th><th>処方箋</th></tr></thead>
+            <tbody>
+              <tr>
+                <td><span class="badge rose">①</span> 発起人が本気にならない</td>
+                <td>最初に自分が実験台になる約束。身銭を出させる</td>
+              </tr>
+              <tr>
+                <td><span class="badge rose">②</span> チャレンジャーがお客様になる</td>
+                <td>選抜時に覚悟を見る。「若者」の言葉を封印→「特命担当」</td>
+              </tr>
+              <tr>
+                <td><span class="badge rose">③</span> 成果が曖昧で終わる</td>
+                <td>提案書で終わらせない。成果はPoC実行ログ＋推薦文＋Before/Afterで定義する</td>
+              </tr>
+              <tr>
+                <td><span class="badge rose">④</span> 事務局が燃え尽きる</td>
+                <td>Phase 1は「1回転」のみ。Do Not Buildリストで開発を抑制</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+    </main>
+  </div>
+</body>
+</html>
