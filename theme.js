@@ -13,8 +13,8 @@ const APP_CONFIG = {
 
 // 1. テーマ初期化 (ブロッキング回避のため即時実行)
 (function() {
-  const saved = localStorage.getItem('theme');
-  if (saved) document.documentElement.setAttribute('data-theme', saved);
+  const saved = localStorage.getItem('theme') || 'light';
+  document.documentElement.setAttribute('data-theme', saved);
 })();
 
 /**
